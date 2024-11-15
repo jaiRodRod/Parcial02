@@ -1,6 +1,6 @@
 import json
 from fastapi import FastAPI
-from routers import ROUTER
+from routers import colaborador_router, tarea_router
 urls = json.load(open('urls.json'))
 
 """
@@ -15,4 +15,5 @@ For requirements do:
 """
 
 app = FastAPI()
-app.include_router(ROUTER.router,prefix=urls["SCHEMA_URL"])
+app.include_router(colaborador_router.router,prefix=urls["colaborador_url"])
+app.include_router(tarea_router.router,prefix=urls["tarea_url"])

@@ -1,4 +1,5 @@
 {
   "base_url": "http://0.0.0.0:8000",
-  "SCHEMA_URL": "/SCHEMA"
+  "colaborador_url": "/colaboradores",
+  "tarea_url": "/tareas"
 }
